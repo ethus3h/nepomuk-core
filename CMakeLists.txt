@@ -41,8 +41,8 @@ set_package_properties(FFmpeg PROPERTIES DESCRIPTION "Video Tag reader" URL "htt
 find_package(EPub)
 set_package_properties(EPub PROPERTIES DESCRIPTION "Ebook epub reader" URL "http://sourceforge.net/projects/ebook-tools" TYPE OPTIONAL PURPOSE "Support for epub metadata")
 
-find_package(QMobipocket)
-set_package_properties(QMobipocket PATHS /usr/kde4 NO_DEFAULT_PATH PROPERTIES DESCRIPTION "Mobipocket epub reader" URL "https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket" TYPE OPTIONAL PURPOSE "Support for mobi metadata")
+find_package(QMobipocket PATHS /usr/kde4 NO_DEFAULT_PATH)
+set_package_properties(QMobipocket PROPERTIES DESCRIPTION "Mobipocket epub reader" URL "https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket" TYPE OPTIONAL PURPOSE "Support for mobi metadata")
 
 find_package(KFileMetaData)
 set_package_properties(KFileMetaData PROPERTIES DESCRIPTION "Library for extracting file metadata" URL "http://projects.kde.org/kfilemetadata" TYPE OPTIONAL)
